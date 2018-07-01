@@ -5,6 +5,9 @@ JSON.stringifyOnce = function(obj, replacer, indent){
     var printedObjectKeys = [];
 
     function printOnceReplacer(key, value){
+        if (typeof value === 'function') {
+          return value + ''; // implicitly `toString` it
+        }
         if ( printedObjects.length > 2000){ // browsers will not print more than 20K, I don't see the point to allow 2K.. algorithm will not be fast anyway if we have too many objects
         return 'object too long';
         }
