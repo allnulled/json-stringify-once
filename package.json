@@ -2,9 +2,9 @@
   "name": "json-stringify-once",
   "version": "1.0.0",
   "description": "JSON.stringifyOnce method (which shows functions too and avoids circular data error)",
-  "main": "src/json-stringify-once.js",
+  "main": "dist/json-stringify-once.univ.js",
   "scripts": {
-    "up": "npm run build && npm shrinkwrap && gitanoaddfile README.md src/json-stringify-once.js package.json npm-shrinkwrap.json dist/json-stringify-once.univ.js ",
+    "up": "npm run build && npm shrinkwrap && gitanoaddfile README.md src/json-stringify-once.js package.json npm-shrinkwrap.json dist/json-stringify-once.univ.js && gitanopush",
     "build": "./node_modules/.bin/js-export -i src/json-stringify-once.js -o dist/json-stringify-once.univ.js",
     "docs": "./node_modules/.bin/javadoc -i src/json-stringify-once.js -o README.md -f markdown",
     "test": "echo \"Error: no test specified\" && exit 1"
