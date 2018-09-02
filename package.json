@@ -1,0 +1,16 @@
+{
+  "name": "json-stringify-once",
+  "version": "1.0.0",
+  "description": "JSON.stringifyOnce method (which shows functions too and avoids circular data error)",
+  "main": "src/json-stringify-once.js",
+  "scripts": {
+  	"up": "gitanoaddfile src/* dist/* package.json README.md npm-shrinkwrap.json && gitanopush",
+  	"build": "./node_modules/.bin/js-export -i src/json-stringify-once.js -o dist/json-stringify-once.univ.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "js-exporter": "^1.0.2"
+  }
+}
