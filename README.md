@@ -1,7 +1,7 @@
  
 
 
-# json-stringify-once
+# stringify-once
 
 JSON stringify without `Converting circular structure to JSON` error.
 
@@ -9,14 +9,14 @@ Note: this snippet was extracted from an awesome answer at StakOverflow, from [h
 
 ## 1. Installation
 
-~$ `npm install --save json-stringify-once`
+~$ `npm install --save stringify-once`
 
 ## 2. Usage
 
 First, you need to import the module from your code:
 
 ```js
-const stringify = require("json-stringify-once");
+const stringify = require("stringify-once");
 ```
 
 Once you have added the code into your project, you will be able to:
@@ -28,7 +28,7 @@ stringify(window); // not formatted
 stringify(window, null, 4); // formatted
 ```
 
-Notice that the method used is not `stringify`, but `stringifyOnce`.
+Notice that the method used is not `JSON.stringify`, but `JSON.stringifyOnce`.
 
 ## 3. Conclusion
 
